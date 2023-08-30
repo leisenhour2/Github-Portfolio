@@ -7,8 +7,8 @@ To Let You Know That It Has Been Used Already. If Letter Is Not In Word, Then Li
 Visual Display Of The Hangman. When Lives Are 0 and Hangman Is Complete, You Lose. If You Guessed The Word Correctly,<br>
 Then You Win and You Can Choose To Play The Game Again With A Different Word. The Words From The WordList Are Deleted<br>
 Each Game To Prevent Duplicates So You'll Have A New Word Each Time You Play Again. Words Can Be Added or Removed From<br>
-WordList by Changing Them In The WordList Variable in "assets.py." If This Is Done, Words Must Have No Spaces/Dashes/Slashes<br>
-Numbers, Etc.
+WordList by Adding Them On A New Line In The "wordlist.txt" File Which Has 1000 Words By Default. New Words Can Only<br>
+Contain Letters, Spaces, and Hypens(-).
 
 Python Used:
 
@@ -17,6 +17,7 @@ Python Used:
 - Modules(String and Random)
 - Conditional Statements
 - Lists 
+- Sets
 - User Input
 - Functions
 - Comments

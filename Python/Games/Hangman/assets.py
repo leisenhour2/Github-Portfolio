@@ -1,59 +1,31 @@
+#Imports Path Method From PathLib Module
+from pathlib import Path
 #Imports Random Module
 import random as r
 
-#List Of Words That Can Be Chosen. Feel Free To Add More, but They Must Be Letters Only("No Spaces, Dashes/Slashes/Numbers, Etc.")
-wordlist = [
-    "portrait",
-    "glory",
-    "delay",
-    "contract",
-    "easy",
-    "colleague",
-    "shorts",
-    "faith",
-    "staff",
-    "hair",
-    "enfix",
-    "hobby",
-    "demonstrate",
-    "doll",
-    "maximum",
-    "quest",
-    "hypothesize",
-    "family",
-    "average",
-    "uniform",
-    "disagree",
-    "stick",
-    "worry",
-    "population",
-    "deficiency",
-    "prayer",
-    "frown",
-    "monopoly",
-    "up",
-    "discipline",
-    "suburb",
-    "telephone",
-    "sale",
-    "continuation",
-    "efflux",
-    "radiation",
-    "invasion",
-    "referral",
-    "sequence",
-    "stake",
-    "econobox",
-    "cover",
-    "forbid",
-    "exploration",
-    "slave",
-    "raid",
-    "sympathetic",
-    "dozen",
-    "premature",
-    "loot"
-]
+#List Of Words That Can Be Chosen. Feel Free To Add More, but They Must Be Letters, Spaces, or Hypens(-) Only In Word Added
+wordlist = []
+
+#Imports Words From "wordlist.txt" File In This Directory. To Add More Words, Open Text File And Add Each New Word On A New Line
+with open(Path(__file__).with_name("wordlist.txt")) as words:
+    for line in words.readlines():
+        wordlist.extend(line)
+
+#Removes \n From Words So They Don't Seem To Have New Lines When Playing Game
+wordlist = "".join(wordlist).split("\n")
+
+#Converts "wordlist" To Set To Remove Duplicate Words
+wordlist = set(wordlist)
+
+#Converts "wordlist" Back Into A List So Game Will Work Right When Removing Words Already Used On Play Again Games
+wordlist = list(wordlist)
+
+#Prints Amount Of Words Currently In List
+def wordcount():
+    return f"Words Currently In WordList: {len(wordlist)}"
+
+#Calls/Executes "wordcount" Function
+wordcount()
 
 #This Just Loops Through and Makes All Letters In The Words Capitalized
 for index in range(len(wordlist)):
