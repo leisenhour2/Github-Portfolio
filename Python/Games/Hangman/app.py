@@ -36,16 +36,22 @@ def playgame():
     else:
         #If No More Words Are In "wordlist" Variable Then You Can't Play Again and Are Prompted That You Are Out Of Words.
         print("Out Of Words!!!")
-    print(word)
+        exit()
     #This Is Variable That Shows How Many Characters Are In Word and Is Filled In When Guessed Correctly
     toguess = "" #For Example: The Word Is "Mouse", This Displays _ _ _ _ _ . You Guess "u" Then This Displays _ _ U _ _
 
-    #Sets Up Board If Words Have Dashes(-) or Spaces
+    #Sets Up Board If Words Have Hypens(-), Apostrophes('), Commas(,), Periods(.) and/or Spaces
     for i in word:
         if i == " ":
             toguess += " "
         elif i == "-":
             toguess += "-"
+        elif i == "'":
+            toguess += "'"
+        elif i == ",":
+            toguess += ","    
+        elif i == ".":
+            toguess += "."        
         else:
             toguess += "_"
 

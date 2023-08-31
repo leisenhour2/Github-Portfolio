@@ -3,7 +3,7 @@ from pathlib import Path
 #Imports Random Module
 import random as r
 
-#List Of Words That Can Be Chosen. Feel Free To Add More, but They Must Be Letters, Spaces, or Hypens(-) Only In Word Added
+#List Of Words That Can Be Chosen. Feel Free To Add More, but They Can Have Letters, Hypens(-), Apostrophes('), Commas(,), Periods(.) and/or Spaces Only
 wordlist = []
 
 #Imports Words From "wordlist.txt" File In This Directory. To Add More Words, Open Text File And Add Each New Word On A New Line
