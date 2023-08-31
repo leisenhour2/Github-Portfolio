@@ -10,7 +10,7 @@ aiscore = 0 #AI's Total Score
 
 #Function That Prints Out A Scoreboard With The Current Scores Updated
 def scoreboard():
-    return f"""WORDS LEFT IN WORDLIST: {len(wordlist)}
+    return f"""WORDS LEFT IN WORDLIST: {wordcount()}
             =======================
                 SCORES:            
                 Player: {pscore}   
