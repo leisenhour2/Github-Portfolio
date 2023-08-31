@@ -8,7 +8,8 @@ Visual Display Of The Hangman. When Lives Are 0 and Hangman Is Complete, You Los
 Then You Win and You Can Choose To Play The Game Again With A Different Word. The Words From The WordList Are Deleted<br>
 Each Game To Prevent Duplicates So You'll Have A New Word Each Time You Play Again. Words Can Be Added or Removed From<br>
 WordList by Adding Them On A New Line In The "wordlist.txt" File Which Has 1000 Words By Default. New Words Can Only<br>
-Contain Letters, Spaces, Commas(,), Apostrophes('), Periods(.), and Hypens(-).
+Contain Letters, Spaces, Commas(,), Apostrophes('), Periods(.), and Hypens(-). This Game Also Tells You How Many Words<br>
+Are Left In Your Wordlist When It Shows The Scoreboard.
 
 Python Used:
 
