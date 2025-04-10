@@ -11,7 +11,7 @@ This script scrapes the latest blog posts from Eurogamer.net's blogs section,
 extracts key metadata, and saves it in both JSON and CSV formats.
 
 Author: Larry Isenhour II
-GitHub: https://github.com/your-username/eurogamer-blog-scraper
+GitHub: https://github.com/leisenhour2/Github-Portfolio/blob/main/Python/Intermediate%20Python/Eurogamer%20Web%20Scraper/
 
 Usage:
     - Requires a valid user agent in 'user_agent_override.txt'
